@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Item /> renders correctly 1`] = `
+<Item
+  id="123"
+  name="Item one"
+>
+  <JSXStyle
+    css="li.jsx-4170437294{border:1px solid grey;border-radius:5px;padding:10px;margin:10px;max-width:500px;}"
+    styleId="4170437294"
+  />
+  <li
+    className="jsx-4170437294"
+  >
+    Item one
+  </li>
+</Item>
+`;
