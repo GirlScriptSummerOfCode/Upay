@@ -36,7 +36,7 @@ Please follow the mentioned code of conduct which will ensure the health and lon
 
 - Alert the trust committee if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential. 
 
--  If you witness any such behavior feel free to report to the organizing team.
+- If you witness any such behavior feel free to report to the organizing team.
 
 ### Our Pledge
 
@@ -52,21 +52,27 @@ orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Using welcoming and inclusive language
+
+- Being respectful of differing viewpoints and experiences
+
+- Gracefully accepting constructive criticism
+
+- Focusing on what is best for the community
+
+- Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+- The use of sexualized language or imagery and unwelcome sexual attention or advances
+
+- Trolling, insulting/derogatory comments, and personal or political attacks
+
+- Public or private harassment
+
+- Publishing others' private information, such as a physical or electronic address, without explicit permission
+
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ### Our Responsibilities
