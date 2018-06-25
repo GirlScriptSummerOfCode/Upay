@@ -24,7 +24,6 @@
     "react-test-renderer": "16.2.0"
   },
   "scripts": {
-    "precommit": "lint-staged && npm test",
     "prepush": "npm test",
     "test": "NODE_ENV=test jest",
     "dev": "node server",
@@ -74,11 +73,5 @@
     "singleQuote": true,
     "tabWidth": 2,
     "useTabs": false
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run pretty",
-      "git add"
-    ]
   }
 }
