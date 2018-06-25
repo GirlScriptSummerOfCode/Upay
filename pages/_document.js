@@ -2,6 +2,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import links from '../constants/links';
 import NavBar from '../components/NavBar';
 
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -12,6 +13,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <link rel="stylesheet" href="/_next/static/style.css" />
           <style>{`
             body {
               margin: 0;
