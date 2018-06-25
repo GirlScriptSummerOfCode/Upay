@@ -1,3 +1,4 @@
+
 # Upay
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
@@ -10,6 +11,11 @@ Tech Stack: [Next.js](https://nextjs.org/) (NodeJS, ReactJS), ExpressJS server.
 
 Admin: Shagufta Gurmukhdas
 Mentors: Nupur Baghel, Sambhav Jain, Divjot Singh, Gaurav Sitlani, Bhavin Jawade
+
+- [Upay](#upay)
+    - [Building](#building)
+    - [Contribution](#contribution)
+    - [Contributors](#contributors)
 
 ## Building
 
