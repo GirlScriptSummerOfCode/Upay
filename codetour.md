@@ -63,7 +63,7 @@ A software license tells others what they can and can't do with your source code
 
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): Deatiled instructions on contributing to this project.
 
-- [`codetour.md`](codetour.md): A tour through all the files and folders of this project.
+- [`CODETOUR.md`](CODETOUR.md): A tour through all the files and folders of this project.
 
 
 Please feel free to make changes to the above documentation :)
