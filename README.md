@@ -38,12 +38,14 @@ npm start
 npm run test
 ```
 
+
 ## Contribution
 
 - Use `npx all-contributors-cli add <your-github-handle> <code|docs|...>` to add yourself in the Contributor list below. The project follows [all-contributors](https://github.com/kentcdodds/all-contributors) format.
 - [VSCode](https://code.visualstudio.com/) is recommended as the editor for this project.
 - Please install [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) [plugins](https://marketplace.visualstudio.com/) for VSCode for improved developer experience.
 - Please follow [JSDoc](http://usejsdoc.org/) for your submitted code. Use [DocumentThis](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) plugin if required.
+- Use [`codetour.md`](codetour.md) to get an understanding of the project folder structure.
 - Write tests for complicated components and modules.
 
 ## Contributors
