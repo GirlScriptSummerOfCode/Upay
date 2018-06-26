@@ -28,7 +28,7 @@
   },
   "scripts": {
     "prepush": "npm test",
-    "lint": "eslint ./src --fix",
+    "lint": "eslint ./",
     "test": "NODE_ENV=test jest",
     "dev": "node server",
     "build": "next build",
