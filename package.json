@@ -1,5 +1,5 @@
 {
-  "name": "with-jest",
+  "name": "upay-website",
   "version": "1.0.0",
   "dependencies": {
     "babel-core": "7.0.0-bridge.0",
@@ -26,7 +26,7 @@
   "scripts": {
     "prepush": "npm test",
     "lint": "eslint ./",
-    "test": "NODE_ENV=test jest",
+    "test": "NODE_ENV=test jest && npm run lint",
     "dev": "node server",
     "build": "next build",
     "start": "NODE_ENV=production node server"
@@ -74,5 +74,20 @@
     "singleQuote": true,
     "tabWidth": 2,
     "useTabs": false
-  }
+  },
+  "description": "[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GirlScriptSummerOfCode/Upay.git"
+  },
+  "keywords": [
+    "upay",
+    "website"
+  ],
+  "author": "GSSoC and Upay Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GirlScriptSummerOfCode/Upay/issues"
+  },
+  "homepage": "https://github.com/GirlScriptSummerOfCode/Upay#readme"
 }

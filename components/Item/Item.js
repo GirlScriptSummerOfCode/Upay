@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Item = ({ id, name }) => (
+const Item = ({ name }) => (
   <React.Fragment>
     <style jsx>{`
       li {
