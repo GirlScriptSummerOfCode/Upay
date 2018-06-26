@@ -1,5 +1,6 @@
 import React from 'react';
 import Item from '../components/Item';
+import CheckoutButton from '../components/CheckoutButton';
 
 /**
  * Home page
@@ -39,6 +40,8 @@ export default class IndexPage extends React.PureComponent {
               <Item key={id} name={name} />
             ))}
           </ul>
+
+          <CheckoutButton />
         </main>
       </React.Fragment>
     );
