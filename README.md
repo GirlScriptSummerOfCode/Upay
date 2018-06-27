@@ -28,6 +28,9 @@ npm ci
 # start project in development mode
 npm run dev
 
+# start styleguidist for /components directory documentation
+npx styleguidist server
+
 # build project
 npm run build
 
