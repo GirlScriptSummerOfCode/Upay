@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "cross-env": "^5.2.0",
     "enzyme": "3.2.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "^3.3.4",
@@ -26,10 +27,10 @@
   "scripts": {
     "prepush": "npm test",
     "lint": "eslint ./",
-    "test": "NODE_ENV=test jest && npm run lint",
+    "test": "cross-env NODE_ENV=test jest && npm run lint",
     "dev": "node server",
     "build": "next build",
-    "start": "NODE_ENV=production node server"
+    "start": "cross-env NODE_ENV=production node server"
   },
   "babel": {
     "env": {
