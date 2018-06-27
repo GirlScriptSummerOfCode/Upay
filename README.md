@@ -1,21 +1,20 @@
-
 # Upay
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 The foundation of development for every society is the education of its youth. Keeping this in mind, an NGO UPAY (**U**nder **P**rivileged **A**dvancement by **Y**outh), was established in May 2010 by a group of young engineers from IITs and NITs. It mainly aims to provide opportunities to underprivileged children and bring some sunshine in those deprived lives.
 
-Ever since it's dawn, UPAY Team has been working wholeheartedly in achieving this aim. Its success story can be culminated by the mere fact that where children were unable to do basic arithmetic calculations are now, not just producing excellent academic results but also bringing laurels to these underprivileged areas. The main vision of UPAY is overcome disparities in education so that every child gets an opportunity to Learn, Grow and Succeed.
+Ever since it is dawn, UPAY Team has been working wholeheartedly in achieving this aim. Its success story can be culminated by the mere fact that where children were unable to do basic arithmetic calculations are now, not just producing excellent academic results but also bringing laurels to these underprivileged areas. The main vision of UPAY is overcome disparities in education so that every child gets an opportunity to Learn, Grow and Succeed.
 
 Tech Stack: [Next.js](https://nextjs.org/) (NodeJS, ReactJS), ExpressJS server.
 
-**Admin**: Shagufta Gurmukhdas   
+**Admin**: Shagufta Gurmukhdas  
 **Mentors**: Nupur Baghel, Sambhav Jain, Divjot Singh, Gaurav Sitlani, Bhavin Jawade
 
 - [Upay](#upay)
-    - [Building](#building)
-    - [Contribution](#contribution)
-    - [Contributors](#contributors)
+  - [Building](#building)
+  - [Contribution](#contribution)
+  - [Contributors](#contributors)
 
 ## Building
 
@@ -38,7 +37,6 @@ npm start
 npm run test
 ```
 
-
 ## Contribution
 
 - Use `npx all-contributors-cli add <your-github-handle> <code|docs|...>` to add yourself in the Contributor list below. The project follows [all-contributors](https://github.com/kentcdodds/all-contributors) format.
@@ -54,8 +52,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/6177621?v=4" width="100px;"/><br /><sub><b>Divjot Singh</b></sub>](http://bogas04.github.io)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=bogas04 "Code") | [<img src="https://avatars2.githubusercontent.com/u/26179770?v=4" width="100px;"/><br /><sub><b>MADHAV BAHL</b></sub>](http://madhavbahl.tech/)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=MadhavBahlMD "Code") | [<img src="https://avatars2.githubusercontent.com/u/21311242?v=4" width="100px;"/><br /><sub><b>Minanshu Singh</b></sub>](https://github.com/kryptokinght)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=kryptokinght "Code") | [<img src="https://avatars3.githubusercontent.com/u/19583619?v=4" width="100px;"/><br /><sub><b>Sambhav Jain</b></sub>](https://sourcerer.io/sambhav2612)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=sambhav2612 "Docs") |
-| :---: | :---: | :---: | :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/6177621?v=4" width="100px;"/><br /><sub><b>Divjot Singh</b></sub>](http://bogas04.github.io)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=bogas04 "Code") | [<img src="https://avatars2.githubusercontent.com/u/26179770?v=4" width="100px;"/><br /><sub><b>MADHAV BAHL</b></sub>](http://madhavbahl.tech/)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=MadhavBahlMD "Code") | [<img src="https://avatars2.githubusercontent.com/u/21311242?v=4" width="100px;"/><br /><sub><b>Minanshu Singh</b></sub>](https://github.com/kryptokinght)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=kryptokinght "Code") |
+| :---: | :---: | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
