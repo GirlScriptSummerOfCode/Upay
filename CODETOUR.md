@@ -2,7 +2,7 @@
 
 A quick introduction to the folders and files in this repo.
 
-## Website anatomy
+## Project anatomy
 
 The website is split into two parts, [`server`](server/index.js) and client, which is further organized in individual folders. Current server is an implementation of [Express](https://expressjs.com/) server. Its a very simple server that makes use of a dummy [`API`](server/api/index.js) and lets all other routes to be handled by [`Next.js`](https://nextjs.org/). When you run `npm run dev`, you are actually running this file [`index.js`](server/index.js).
 
@@ -16,12 +16,8 @@ To keep things modular, the resources are divided into folders namely `/componen
 
 Contains all the pages a user can see or navigate to. This is a Next.js feature. For example;
 
-- [`index.js`](pages/index.js): Home page (`/`)
-
-  The home page of our website.
-
-- [`about.js`](pages/about.js): About page (`/about`)
-  An introduction to UPAY, its vision, its mission, how it works.
+- [`index.js`](pages/index.js): Home page (`/`). The home page of our website.
+- [`about.js`](pages/about.js): About page (`/about`). About page.
 
 ### [`public`](public/): Serves static files like images, SVGs, videos, fonts, etc.
 
@@ -34,13 +30,11 @@ You can check the component library in an interactive way using `npm run stylegu
 For example;
 
 - [`components/NavBar`](components/NavBar/): Contains code for implementing `<NavBar/>` component
-
 - [`components/Item`](components/Item/): Contains code for implementing `<Item/>` component
 
 ### [`server`](server/): Contains our express server and dummy API
 
 - [`server/index.js`](server/index.js/): A simple server implementation using express
-
 - [`server/api/index.js`](server/api/index.js): Our dummy API
 
 ## Testing
@@ -62,11 +56,8 @@ In the folder of the file (`xyz.js`) you want to test, create `__tests__` folder
 
 ## Others
 
-### [`.gitignore`](.gitignore): Contains a list of files and folders to be ignored by git. [More about gitignore..](https://medium.com/@haydar_ai/learning-how-to-git-ignoring-files-and-folders-using-gitignore-177556afdbe3)
-
-### [`LICENSE`](LICENSE): license file
-
-A software license tells others what they can and can't do with your source code. The most common licenses for open source projects are MIT, Apache, GNU... licenses. The license used in this project is the MIT license.
+- [`.gitignore`](.gitignore): Contains a list of files and folders to be ignored by git. [More about gitignore..](https://medium.com/@haydar_ai/learning-how-to-git-ignoring-files-and-folders-using-gitignore-177556afdbe3)
+- [`LICENSE`](LICENSE): license file. A software license tells others what they can and can't do with your source code. The most common licenses for open source projects are MIT, Apache, GNU... licenses. The license used in this project is the MIT license.
 
 ### MARKDOWNS
 
