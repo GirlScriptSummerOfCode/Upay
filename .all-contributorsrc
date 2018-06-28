@@ -10,15 +10,6 @@
   "commit": true,
   "contributors": [
     {
-      "login": "bogas04",
-      "name": "Divjot Singh",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/6177621?v=4",
-      "profile": "http://bogas04.github.io",
-      "contributions": [
-        "code"
-      ]
-    },
-    {
       "login": "MadhavBahlMD",
       "name": "MADHAV BAHL",
       "avatar_url": "https://avatars2.githubusercontent.com/u/26179770?v=4",
@@ -42,7 +33,34 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/19583619?v=4",
       "profile": "https://sourcerer.io/sambhav2612",
       "contributions": [
-        "docs"
+        "doc"
+      ]
+    },
+    {
+      "login": "SakshiShreya",
+      "name": "Sakshi Shreya",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/15413534?v=4",
+      "profile": "https://github.com/SakshiShreya",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "adarshlilha",
+      "name": "Adarsh Lilha",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13575704?v=4",
+      "profile": "https://github.com/adarshlilha",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bogas04",
+      "name": "Divjot Singh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6177621?v=4",
+      "profile": "http://bogas04.github.io",
+      "contributions": [
+        "code"
       ]
     }
   ]
