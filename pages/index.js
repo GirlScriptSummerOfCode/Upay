@@ -1,5 +1,16 @@
 import React from 'react';
 import Item from '../components/Item';
+import Arrow from '../components/Icons/Arrow';
+import Bookmark from '../components/Icons/Bookmark';
+import Cog from '../components/Icons/Cog';
+import Hamburger from '../components/Icons/Hamburger';
+import Heart from '../components/Icons/Heart';
+import Rupee from '../components/Icons/Rupee';
+import Save from '../components/Icons/Save';
+import Search from '../components/Icons/Search';
+import Share from '../components/Icons/Share';
+import User from '../components/Icons/User';
+import Chevron from '../components/Icons/Chevron';
 
 /**
  * Home page
@@ -39,6 +50,21 @@ export default class IndexPage extends React.PureComponent {
               <Item key={id} name={name} />
             ))}
           </ul>
+
+          <section>
+            <h1>Icons</h1>
+            <Arrow />
+            <Bookmark />
+            <Cog />
+            <Hamburger />
+            <Heart />
+            <Rupee />
+            <Save />
+            <Search />
+            <Share />
+            <User />
+            <Chevron direction={3} />
+          </section>
         </main>
       </React.Fragment>
     );
