@@ -52,7 +52,7 @@ export default class IndexPage extends React.PureComponent {
           </ul>
 
           <section>
-            <h1>Icons</h1>
+            <h1>Icon Library</h1>
             <Arrow />
             <Bookmark />
             <Cog />
