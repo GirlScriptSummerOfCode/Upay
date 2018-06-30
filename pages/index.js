@@ -63,7 +63,7 @@ export default class IndexPage extends React.PureComponent {
             <Search />
             <Share />
             <User />
-            <Chevron direction={3} />
+            <Chevron direction={Chevron.DIRECTIONS.TOP} />
           </section>
         </main>
       </React.Fragment>
