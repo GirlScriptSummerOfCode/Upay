@@ -1,10 +1,6 @@
 # Upay
 
-<<<<<<< HEAD
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
-=======
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
->>>>>>> ad5b44678a07fe38b8dcd3fe6dbe4c2783dab385
 
 The foundation of development for every society is the education of its youth. Keeping this in mind, an NGO UPAY (**U**nder **P**rivileged **A**dvancement by **Y**outh), was established in May 2010 by a group of young engineers from IITs and NITs. It mainly aims to provide opportunities to underprivileged children and bring some sunshine in those deprived lives.
 
