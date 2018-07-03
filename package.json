@@ -29,6 +29,7 @@
     "prepush": "npm test",
     "lint": "eslint ./",
     "test": "cross-env NODE_ENV=test jest && npm run lint",
+    "testWatch": "cross-env NODE_ENV=test jest --watch && npm run lint",
     "dev": "node server",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server",
