@@ -1,33 +1,39 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 /**
  *
  *
  * @export
- * @class buybutton
- * @augments {React.PureComponent<buybuttonProps>}
+ * @class BuyNow
+ * @augments {React.PureComponent<BuyNowProps>}
  */
-export default class buybutton extends React.PureComponent {
+export default class BuyNow extends React.PureComponent {
   /**
-   * @typedef {object} buybuttonProps
-   * @property {array} links
-   *
-   * @static
-   * @memberof buybutton
+   * @typedef {object} BuyNowProps
+   * 
+   *  @static
+   * @memberof BuyNow
    */
-  static propTypes = {
-    links: PropTypes.arrayOf(
-      PropTypes.shape({
-        url: PropTypes.string,
-        title: PropTypes.string,
-      })
-    ).isRequired,
-  };
+       clicked () {
+         console.log('the button is clicked');
+       } 
+   
 
   render() {
     return (
       <React.Fragment>
-         <button>Buy Now</button>
+        <style jsx>{`
+          button {
+            background-color: #e33812;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    
+          }
+        `}</style>
+         <button onClick={this.clicked} >Buy Now</button>
       </React.Fragment>
     );
   }

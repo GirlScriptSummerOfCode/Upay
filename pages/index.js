@@ -2,7 +2,6 @@ import React from 'react';
 import Item from '../components/Item';
 import NavBar from '../components/NavBar';
 import links from '../constants/links';
-import buybutton from '../components/buybutton';
 
 /**
  * Home page
@@ -51,9 +50,7 @@ export default class IndexPage extends React.PureComponent {
               <Item id={id} name={name} />
             ))}
           </ul>
-          <h2>Buy Now Button</h2>
-          <buybutton/>
-      </main>
+          </main>
       
       </React.Fragment>
     );
