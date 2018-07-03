@@ -1,12 +1,12 @@
 const { Router } = require('express');
 
 const items = [
-  { id: 1, name: 'item 1' },
-  { id: 2, name: 'item 2' },
-  { id: 3, name: 'item 3' },
-  { id: 4, name: 'item 4' },
-  { id: 5, name: 'item 5' },
-  { id: 6, name: 'item 6' },
+  { id: 1, name: ['Item1', '/images/placeholder.png', 100, undefined] },
+  { id: 2, name: ['Item2', '/images/placeholder.png', 200, 150] },
+  { id: 3, name: ['Item3', '/images/placeholder.png', 300, 250] },
+  { id: 4, name: ['Item4', '/images/placeholder.png', 400, 350] },
+  { id: 5, name: ['Item5', '/images/placeholder.png', 500, 450] },
+  { id: 6, name: ['Item6', '/images/placeholder.png', 600, undefined] },
 ];
 
 const api = Router();

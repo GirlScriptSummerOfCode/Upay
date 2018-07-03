@@ -27,6 +27,11 @@ export default class IndexPage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
+        <style jsx>{`
+          ul {
+            padding: 0;
+          }
+        `}</style>
         <main>
           <img width="100%" src="/images/logo.png" alt="Logo of Upay NGO" />
 
