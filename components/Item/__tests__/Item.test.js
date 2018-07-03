@@ -8,8 +8,4 @@ describe('<Item />', () => {
     const wrapper = mount(<Item name="Item one" id="123" />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('should contain name=testing', () => {
-    const wrapper = mount(<Item name="testing" />);
-    expect(wrapper.props().name).toEqual('testing');
-  });
 });
