@@ -88,6 +88,7 @@ const Item = ({ name }) => (
         </div>
       </div>
       <div className="product_buttons">
+        {/*Add the buttons later*/}
         <div className="add_button">Add</div>
         <div className="save_for_later">SaveForLater</div>
       </div>

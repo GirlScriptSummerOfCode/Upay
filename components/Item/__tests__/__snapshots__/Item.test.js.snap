@@ -6,13 +6,68 @@ exports[`<Item /> renders correctly 1`] = `
   name="Item one"
 >
   <JSXStyle
-    css="li.jsx-4170437294{border:1px solid grey;border-radius:5px;padding:10px;margin:10px;max-width:500px;}"
-    styleId="4170437294"
+    css="s.jsx-3931961554{color:#696b79;}.product_card.jsx-3931961554{font-size:14px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;list-style-type:none;margin:10px 1%;width:23%;}.product_card.jsx-3931961554:hover .product_buttons.jsx-3931961554{display:block;}.product_body.jsx-3931961554{padding:8px;text-align:center;}.product_body.jsx-3931961554 a.jsx-3931961554{font-weight:bold;-webkit-text-decoration:none;text-decoration:none;}.product_name.jsx-3931961554,.product_price.jsx-3931961554{height:30px;}.product_buttons.jsx-3931961554{position:relative;margin-top:-30px;bottom:50px;display:none;}.product_buttons.jsx-3931961554 div.jsx-3931961554{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #b6b6b6;width:50%;float:left;padding:8px;padding-top:10px;height:30px;background:white;}@media (max-width:768px){.product_card.jsx-3931961554{margin:10px 1.5%;width:30%;}}@media (max-width:425px){.product_card.jsx-3931961554{margin:10px 2%;width:46%;}}"
+    styleId="3931961554"
   />
   <li
-    className="jsx-4170437294"
+    className="jsx-3931961554 product_card"
   >
-    Item one
+    <a
+      className="jsx-3931961554"
+      href="#"
+    >
+      <img
+        alt="I"
+        className="jsx-3931961554"
+        src="t"
+        width="100%"
+      />
+    </a>
+    <div
+      className="jsx-3931961554 product_body"
+    >
+      <div
+        className="jsx-3931961554 product_name"
+      >
+        <a
+          className="jsx-3931961554"
+          href="#"
+        >
+          I
+        </a>
+      </div>
+      <div
+        className="jsx-3931961554 product_price"
+      >
+        <span
+          className="jsx-3931961554"
+        >
+          ₹
+          m
+             
+        </span>
+        <s
+          className="jsx-3931961554"
+        >
+          ₹
+          e
+        </s>
+      </div>
+    </div>
+    <div
+      className="jsx-3931961554 product_buttons"
+    >
+      <div
+        className="jsx-3931961554 add_button"
+      >
+        Add
+      </div>
+      <div
+        className="jsx-3931961554 save_for_later"
+      >
+        SaveForLater
+      </div>
+    </div>
   </li>
 </Item>
 `;
