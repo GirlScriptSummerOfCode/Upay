@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> renders correctly 1`] = `
+<NavBar
+  links={
+    Array [
+      Object {
+        "title": "Upay",
+        "url": "/",
+      },
+      Object {
+        "title": "About",
+        "url": "/about",
+      },
+    ]
+  }
+>
+  <JSXStyle
+    css="nav.jsx-2694676140{background:linear-gradient(90deg,violet,limegreen);}nav.jsx-2694676140 ul.jsx-2694676140{margin:0;padding:20px;list-style:none;}nav.jsx-2694676140 ul.jsx-2694676140 li.jsx-2694676140{display:inline-block;margin:5px;}nav.jsx-2694676140 ul.jsx-2694676140 li.jsx-2694676140 a.jsx-2694676140{color:white;-webkit-text-decoration:none;text-decoration:none;}"
+    styleId="2694676140"
+  />
+  <nav
+    className="jsx-2694676140"
+  >
+    <ul
+      className="jsx-2694676140"
+    >
+      <li
+        className="jsx-2694676140"
+        key="0"
+      >
+        <Link
+          href="/"
+        >
+          <a
+            className="jsx-2694676140"
+            href="/"
+            onClick={[Function]}
+          >
+            Upay
+          </a>
+        </Link>
+      </li>
+      <li
+        className="jsx-2694676140"
+        key="1"
+      >
+        <Link
+          href="/about"
+        >
+          <a
+            className="jsx-2694676140"
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</NavBar>
+`;
