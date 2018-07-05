@@ -51,9 +51,17 @@ export default class IndexPage extends React.PureComponent {
 
           <h2>Items</h2>
           <ul>
-            {this.state.items.map(({ id, name }) => (
-              <Item key={id} name={name} />
-            ))}
+            {this.state.items.map(
+              ({ id, name, imageUrl, originalPrice, discountedPrice }) => (
+                <Item
+                  key={id}
+                  name={name}
+                  imageUrl={imageUrl}
+                  originalPrice={originalPrice}
+                  discountedPrice={discountedPrice}
+                />
+              )
+            )}
           </ul>
 
           <section>

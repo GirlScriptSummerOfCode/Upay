@@ -1,10 +1,12 @@
 import React from 'react';
+import Rupee from '../Icons/Rupee';
 
-const Item = ({ name }) => (
+const Item = props => (
   <React.Fragment>
     <style jsx>{`
       s {
         color: #696b79;
+        font-weight: bold;
       }
 
       .product_card {
@@ -32,9 +34,13 @@ const Item = ({ name }) => (
         text-decoration: none;
       }
 
-      .product_name,
+      .product_name {
+        height: 30px;
+      }
+
       .product_price {
         height: 30px;
+        font-weight: bold;
       }
 
       .product_buttons {
@@ -73,18 +79,33 @@ const Item = ({ name }) => (
     `}</style>
     <li className="product_card">
       <a href="#">
-        <img width="100%" src={name[1]} alt={name[0]} />
+        <img width="100%" src={props.imageUrl} alt={props.name} />
       </a>
       <div className="product_body">
         <div className="product_name">
-          <a href="#">{name[0]}</a>
+          <a href="#">{props.name}</a>
         </div>
         <div className="product_price">
           {/*This code handles price.*/}
           {/*If discounted price is available, it displays discounted price and strikes-through original price.*/}
           {/*If discounted price is not available, it displays original price.*/}
-          {name[3] && <span>₹{name[3]}&nbsp;&nbsp;&nbsp;</span>}
-          {name[3] ? <s>₹{name[2]}</s> : <span>₹{name[2]}</span>}
+          {props.discountedPrice && (
+            <span>
+              <Rupee height=".8em" />
+              {props.discountedPrice}&nbsp;&nbsp;&nbsp;
+            </span>
+          )}
+          {props.discountedPrice ? (
+            <s>
+              <Rupee height=".8em" />
+              {props.originalPrice}
+            </s>
+          ) : (
+            <span>
+              <Rupee height=".8em" />
+              {props.originalPrice}
+            </span>
+          )}
         </div>
       </div>
       <div className="product_buttons">

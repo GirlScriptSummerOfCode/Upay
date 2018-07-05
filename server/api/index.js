@@ -1,12 +1,48 @@
 const { Router } = require('express');
 
 const items = [
-  { id: 1, name: ['Item1', '/images/placeholder.png', 100, undefined] },
-  { id: 2, name: ['Item2', '/images/placeholder.png', 200, 150] },
-  { id: 3, name: ['Item3', '/images/placeholder.png', 300, 250] },
-  { id: 4, name: ['Item4', '/images/placeholder.png', 400, 350] },
-  { id: 5, name: ['Item5', '/images/placeholder.png', 500, 450] },
-  { id: 6, name: ['Item6', '/images/placeholder.png', 600, undefined] },
+  {
+    id: 1,
+    name: 'Item 1',
+    imageUrl: '/images/placeholder.png',
+    originalPrice: 100,
+    discountedPrice: undefined,
+  },
+  {
+    id: 2,
+    name: 'Item 2',
+    imageUrl: '/images/placeholder.png',
+    originalPrice: 200,
+    discountedPrice: 150,
+  },
+  {
+    id: 3,
+    name: 'Item 3',
+    imageUrl: '/images/placeholder.png',
+    originalPrice: 300,
+    discountedPrice: 250,
+  },
+  {
+    id: 4,
+    name: 'Item 4',
+    imageUrl: '/images/placeholder.png',
+    originalPrice: 400,
+    discountedPrice: undefined,
+  },
+  {
+    id: 5,
+    name: 'Item 5',
+    imageUrl: '/images/placeholder.png',
+    originalPrice: 500,
+    discountedPrice: 450,
+  },
+  {
+    id: 6,
+    name: 'Item 6',
+    imageUrl: '/images/placeholder.png',
+    originalPrice: 600,
+    discountedPrice: 550,
+  },
 ];
 
 const api = Router();
