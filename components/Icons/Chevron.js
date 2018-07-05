@@ -5,22 +5,22 @@ const getStyle = direction => {
   const { TOP, LEFT, RIGHT, BOTTOM } = Chevron.DIRECTIONS;
   let transform = '';
   switch (direction) {
-  case TOP: {
-    transform = 'rotate(0deg)';
-    break;
-  }
-  case LEFT: {
-    transform = 'rotate(-90deg)';
-    break;
-  }
-  case RIGHT: {
-    transform = 'rotate(90deg)';
-    break;
-  }
-  case BOTTOM: {
-    transform = 'rotate(180deg)';
-    break;
-  }
+    case TOP: {
+      transform = 'rotate(0deg)';
+      break;
+    }
+    case LEFT: {
+      transform = 'rotate(-90deg)';
+      break;
+    }
+    case RIGHT: {
+      transform = 'rotate(90deg)';
+      break;
+    }
+    case BOTTOM: {
+      transform = 'rotate(180deg)';
+      break;
+    }
   }
 
   return {
