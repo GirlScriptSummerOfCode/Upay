@@ -1,6 +1,12 @@
 # Upay
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
+[![Fork on github](https://img.shields.io/github/forks/GirlScriptSummerOfCode/Upay.svg) ](https://github.com/GirlScriptSummerOfCode/Upay/network/members)
+[![Issues on github](https://img.shields.io/github/issues/GirlScriptSummerOfCode/Upay.svg) ](https://github.com/GirlScriptSummerOfCode/Upay/issues)
+[![Stars on github](https://img.shields.io/github/stars/GirlScriptSummerOfCode/Upay.svg) ](https://github.com/GirlScriptSummerOfCode/Upay/stargazers)
+[![Watchers on github](https://img.shields.io/github/watchers/GirlScriptSummerOfCode/Upay.svg) ](https://github.com/GirlScriptSummerOfCode/Upay/watchers)
+[![MIT license](https://img.shields.io/github/license/GirlScriptSummerOfCode/Upay.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/GirlScriptSummerOfCode/Upay/pulls)
 
 The foundation of development for every society is the education of its youth. Keeping this in mind, an NGO UPAY (**U**nder **P**rivileged **A**dvancement by **Y**outh), was established in May 2010 by a group of young engineers from IITs and NITs. It mainly aims to provide opportunities to underprivileged children and bring some sunshine in those deprived lives.
 
@@ -56,8 +62,10 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/6177621?v=4" width="100px;"/><br /><sub><b>Divjot Singh</b></sub>](http://bogas04.github.io)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=bogas04 "Code") | [<img src="https://avatars2.githubusercontent.com/u/26179770?v=4" width="100px;"/><br /><sub><b>MADHAV BAHL</b></sub>](http://madhavbahl.tech/)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=MadhavBahlMD "Code") | [<img src="https://avatars2.githubusercontent.com/u/21311242?v=4" width="100px;"/><br /><sub><b>Minanshu Singh</b></sub>](https://github.com/kryptokinght)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=kryptokinght "Code") | [<img src="https://avatars3.githubusercontent.com/u/19583619?v=4" width="100px;"/><br /><sub><b>Sambhav Jain</b></sub>](https://sourcerer.io/sambhav2612)<br />[📖](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=sambhav2612 "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/15413534?v=4" width="100px;"/><br /><sub><b>Sakshi Shreya</b></sub>](https://github.com/SakshiShreya)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=SakshiShreya "Code") |
-| :---: | :---: | :---: | :---: | :---: |
+
+| [<img src="https://avatars2.githubusercontent.com/u/26179770?v=4" width="100px;"/><br /><sub><b>MADHAV BAHL</b></sub>](http://madhavbahl.tech/)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=MadhavBahlMD "Code") | [<img src="https://avatars2.githubusercontent.com/u/21311242?v=4" width="100px;"/><br /><sub><b>Minanshu Singh</b></sub>](https://github.com/kryptokinght)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=kryptokinght "Code") | [<img src="https://avatars3.githubusercontent.com/u/19583619?v=4" width="100px;"/><br /><sub><b>Sambhav Jain</b></sub>](https://sourcerer.io/sambhav2612)<br />[📖](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=sambhav2612 "Documentation") | [<img src="https://avatars2.githubusercontent.com/u/15413534?v=4" width="100px;"/><br /><sub><b>Sakshi Shreya</b></sub>](https://github.com/SakshiShreya)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=SakshiShreya "Code") | [<img src="https://avatars1.githubusercontent.com/u/13575704?v=4" width="100px;"/><br /><sub><b>Adarsh Lilha</b></sub>](https://github.com/adarshlilha)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=adarshlilha "Code") | [<img src="https://avatars3.githubusercontent.com/u/6177621?v=4" width="100px;"/><br /><sub><b>Divjot Singh</b></sub>](http://bogas04.github.io)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=bogas04 "Code") | [<img src="https://avatars3.githubusercontent.com/u/26252118?v=4" width="100px;"/><br /><sub><b>Anshul Mittal</b></sub>](https://github.com/Nshul)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=Nshul "Code") |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/24837027?v=4" width="100px;"/><br /><sub><b>Twisha</b></sub>](https://twishasaraiya.github.io/)<br />[💻](https://github.com/GirlScriptSummerOfCode/Upay/commits?author=twishasaraiya "Code") |
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
