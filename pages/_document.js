@@ -1,6 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import links from '../constants/links';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -28,10 +29,12 @@ export default class MyDocument extends Document {
               padding: 20px;
             }
           `}</style>
+          <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
         <body>
           <NavBar links={links} />
           <Main />
+          <Footer />
           <NextScript />
         </body>
       </html>
