@@ -13,10 +13,10 @@ export default class BuyNow extends React.PureComponent {
    *  @static
    * @memberof BuyNow
    */
-       clicked () {
-         console.log('the button is clicked');
-       } 
-   
+
+  clicked (){
+    console.log('the button is clicked'); //eslint-disable-line no-console
+  }
 
   render() {
     return (
@@ -24,16 +24,19 @@ export default class BuyNow extends React.PureComponent {
         <style jsx>{`
           button {
             background-color: #e33812;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
     
           }
         `}</style>
-         <button onClick={this.clicked} >Buy Now</button>
+        
+        <button onClick={this.props.onClick}>
+          {this.props.children}
+        </button>
       </React.Fragment>
     );
   }
