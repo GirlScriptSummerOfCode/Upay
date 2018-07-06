@@ -2,25 +2,34 @@
 
 exports[`<Footer /> renders correctly 1`] = `
 <Footer>
+  <JSXStyle
+    css=".footer-distributed.jsx-2542868192{background-color:#292c2f;box-shadow:0 1px 1px 0 rgba(0,0,0,0.12);box-sizing:border-box;width:100%;text-align:left;font:bold 16px sans-serif;padding:55px 50px;margin-top:80px;}.footer-distributed.jsx-2542868192 .footer-left.jsx-2542868192,.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192,.footer-distributed.jsx-2542868192 .footer-right.jsx-2542868192{display:inline-block;vertical-align:top;}.footer-distributed.jsx-2542868192 .footer-left.jsx-2542868192{width:40%;}.footer-distributed.jsx-2542868192 h3.jsx-2542868192{color:#ffffff;font:normal 36px 'Cookie',cursive;margin:0;}.footer-distributed.jsx-2542868192 h3.jsx-2542868192 span.jsx-2542868192{color:#5383d3;}.footer-distributed.jsx-2542868192 .footer-links.jsx-2542868192{color:#ffffff;margin:20px 0 12px;padding:0;}.footer-distributed.jsx-2542868192 .footer-links.jsx-2542868192 a.jsx-2542868192{display:inline-block;line-height:1.8;-webkit-text-decoration:none;text-decoration:none;color:inherit;}.footer-distributed.jsx-2542868192 .footer-company-name.jsx-2542868192{color:#8f9296;font-size:14px;font-weight:normal;margin:0;}.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192{width:35%;}.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192 i.jsx-2542868192{background-color:#33383b;color:#ffffff;font-size:25px;width:38px;height:38px;border-radius:50%;text-align:center;line-height:42px;margin:10px 15px;vertical-align:middle;}.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192 i.fa-envelope.jsx-2542868192{font-size:17px;line-height:38px;}.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192 p.jsx-2542868192{display:inline-block;color:#ffffff;vertical-align:middle;margin:0;}.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192 p.jsx-2542868192 span.jsx-2542868192{display:block;font-weight:normal;font-size:14px;line-height:2;}.footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192 p.jsx-2542868192 a.jsx-2542868192{color:#5383d3;-webkit-text-decoration:none;text-decoration:none;}.footer-distributed.jsx-2542868192 .footer-right.jsx-2542868192{width:20%;}.footer-distributed.jsx-2542868192 .footer-company-about.jsx-2542868192{line-height:20px;color:#92999f;font-size:13px;font-weight:normal;margin:0;}.footer-distributed.jsx-2542868192 .footer-company-about.jsx-2542868192 span.jsx-2542868192{display:block;color:#ffffff;font-size:14px;font-weight:bold;margin-bottom:20px;}.footer-distributed.jsx-2542868192 .footer-icons.jsx-2542868192{margin-top:25px;}.footer-distributed.jsx-2542868192 .footer-icons.jsx-2542868192 a.jsx-2542868192{display:inline-block;width:35px;height:35px;cursor:pointer;background-color:#33383b;border-radius:2px;font-size:20px;color:#ffffff;text-align:center;line-height:35px;margin-right:3px;margin-bottom:5px;}@media (max-width.jsx-2542868192:880px) .footer-distributed{font:bold 14px sans-serif;}@media (max-width.jsx-2542868192:880px) .footer-distributed.jsx-2542868192 .footer-left.jsx-2542868192,@media (max-width.jsx-2542868192:880px) .footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192,@media (max-width.jsx-2542868192:880px) .footer-distributed.jsx-2542868192 .footer-right.jsx-2542868192{display:block;width:100%;margin-bottom:40px;text-align:center;}@media (max-width.jsx-2542868192:880px) .footer-distributed.jsx-2542868192 .footer-center.jsx-2542868192 i.jsx-2542868192{margin-left:0;}"
+    styleId="2542868192"
+  />
   <footer
-    className="footer-distributed"
+    className="jsx-2542868192 footer-distributed"
   >
     <div
-      className="footer-left"
+      className="jsx-2542868192 footer-left"
     >
-      <h3>
+      <h3
+        className="jsx-2542868192"
+      >
         UPAY
-        <span>
+        <span
+          className="jsx-2542868192"
+        >
           logo
         </span>
       </h3>
       <p
-        className="footer-links"
+        className="jsx-2542868192 footer-links"
       >
         <Link
           href="/"
         >
           <a
+            className="jsx-2542868192"
             href="/"
             onClick={[Function]}
           >
@@ -32,6 +41,7 @@ exports[`<Footer /> renders correctly 1`] = `
           href="/about"
         >
           <a
+            className="jsx-2542868192"
             href="/about"
             onClick={[Function]}
           >
@@ -40,42 +50,59 @@ exports[`<Footer /> renders correctly 1`] = `
         </Link>
       </p>
       <p
-        className="footer-company-name"
+        className="jsx-2542868192 footer-company-name"
       >
         UPAY NGO © 2016
       </p>
     </div>
     <div
-      className="footer-center"
+      className="jsx-2542868192 footer-center"
     >
-      <div>
+      <div
+        className="jsx-2542868192"
+      >
         <i
-          className="fa fa-map-marker"
+          className="jsx-2542868192 fa fa-map-marker"
         />
-        <p>
-          <span>
+        <p
+          className="jsx-2542868192"
+        >
+          <span
+            className="jsx-2542868192"
+          >
             205, Honey Sagar Apartments,
           </span>
-          <span>
+          <span
+            className="jsx-2542868192"
+          >
             Wardhman Nagar Square,
           </span>
           Nagpur, 440008, Maharashtra
         </p>
       </div>
-      <div>
+      <div
+        className="jsx-2542868192"
+      >
         <i
-          className="fa fa-phone"
+          className="jsx-2542868192 fa fa-phone"
         />
-        <p>
+        <p
+          className="jsx-2542868192"
+        >
           7030735531
         </p>
       </div>
-      <div>
+      <div
+        className="jsx-2542868192"
+      >
         <i
-          className="fa fa-envelope"
+          className="jsx-2542868192 fa fa-envelope"
         />
-        <p>
+        <p
+          className="jsx-2542868192"
+        >
           <a
+            className="jsx-2542868192"
             href="mailto:info@upay.org.in"
           >
             info@upay.org.in
@@ -84,45 +111,51 @@ exports[`<Footer /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="footer-right"
+      className="jsx-2542868192 footer-right"
     >
       <p
-        className="footer-company-about"
+        className="jsx-2542868192 footer-company-about"
       >
-        <span>
+        <span
+          className="jsx-2542868192"
+        >
           About the company
         </span>
         The foundation of development for every society is the education of its youth. Keeping this in mind, an NGO UPAY (Underprivileged Advancement by Youth), was established in May 2010 by a group of young engineers from IITs and NITs.
       </p>
       <div
-        className="footer-icons"
+        className="jsx-2542868192 footer-icons"
       >
         <a
+          className="jsx-2542868192"
           href="https://www.facebook.com/UPAY-%E0%A4%89%E0%A4%AA%E0%A4%BE%E0%A4%AF-245407178844117/?fref=ts"
         >
           <i
-            className="fa fa-facebook"
+            className="jsx-2542868192 fa fa-facebook"
           />
         </a>
         <a
+          className="jsx-2542868192"
           href="https://twitter.com/upayorg"
         >
           <i
-            className="fa fa-twitter"
+            className="jsx-2542868192 fa fa-twitter"
           />
         </a>
         <a
+          className="jsx-2542868192"
           href="https://www.youtube.com/results?search_query=upay+ngo"
         >
           <i
-            className="fa fa-youtube"
+            className="jsx-2542868192 fa fa-youtube"
           />
         </a>
         <a
+          className="jsx-2542868192"
           href="https://www.instagram.com/ngo_upay/"
         >
           <i
-            className="fa fa-instagram"
+            className="jsx-2542868192 fa fa-instagram"
           />
         </a>
       </div>
