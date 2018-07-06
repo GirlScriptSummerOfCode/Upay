@@ -29,7 +29,6 @@ export default class MyDocument extends Document {
               padding: 20px;
             }
           `}</style>
-          <link rel="stylesheet" href="/_next/static/style.css" />
           <link
             href="http://fonts.googleapis.com/css?family=Cookie"
             rel="stylesheet"
