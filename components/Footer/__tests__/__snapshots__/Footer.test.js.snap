@@ -9,7 +9,7 @@ exports[`<Footer /> renders correctly 1`] = `
       className="footer-left"
     >
       <h3>
-        Company
+        UPAY
         <span>
           logo
         </span>
@@ -17,46 +17,32 @@ exports[`<Footer /> renders correctly 1`] = `
       <p
         className="footer-links"
       >
-        <a
-          href="#"
+        <Link
+          href="/"
         >
-          Home
-        </a>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </Link>
         ·
-        <a
-          href="#"
+        <Link
+          href="/about"
         >
-          Blog
-        </a>
-        ·
-        <a
-          href="#"
-        >
-          Pricing
-        </a>
-        ·
-        <a
-          href="#"
-        >
-          About
-        </a>
-        ·
-        <a
-          href="#"
-        >
-          Faq
-        </a>
-        ·
-        <a
-          href="#"
-        >
-          Contact
-        </a>
+          <a
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+        </Link>
       </p>
       <p
         className="footer-company-name"
       >
-        Company Name © 2015
+        UPAY NGO © 2016
       </p>
     </div>
     <div
@@ -68,9 +54,12 @@ exports[`<Footer /> renders correctly 1`] = `
         />
         <p>
           <span>
-            21 Revolution Street
+            205, Honey Sagar Apartments,
           </span>
-           Paris, France
+          <span>
+            Wardhman Nagar Square,
+          </span>
+          Nagpur, 440008, Maharashtra
         </p>
       </div>
       <div>
@@ -78,7 +67,7 @@ exports[`<Footer /> renders correctly 1`] = `
           className="fa fa-phone"
         />
         <p>
-          +1 555 123456
+          7030735531
         </p>
       </div>
       <div>
@@ -87,9 +76,9 @@ exports[`<Footer /> renders correctly 1`] = `
         />
         <p>
           <a
-            href="mailto:support@company.com"
+            href="mailto:info@upay.org.in"
           >
-            support@company.com
+            info@upay.org.in
           </a>
         </p>
       </div>
@@ -103,37 +92,37 @@ exports[`<Footer /> renders correctly 1`] = `
         <span>
           About the company
         </span>
-        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        The foundation of development for every society is the education of its youth. Keeping this in mind, an NGO UPAY (Underprivileged Advancement by Youth), was established in May 2010 by a group of young engineers from IITs and NITs.
       </p>
       <div
         className="footer-icons"
       >
         <a
-          href="#"
+          href="https://www.facebook.com/UPAY-%E0%A4%89%E0%A4%AA%E0%A4%BE%E0%A4%AF-245407178844117/?fref=ts"
         >
           <i
             className="fa fa-facebook"
           />
         </a>
         <a
-          href="#"
+          href="https://twitter.com/upayorg"
         >
           <i
             className="fa fa-twitter"
           />
         </a>
         <a
-          href="#"
+          href="https://www.youtube.com/results?search_query=upay+ngo"
         >
           <i
-            className="fa fa-linkedin"
+            className="fa fa-youtube"
           />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/ngo_upay/"
         >
           <i
-            className="fa fa-github"
+            className="fa fa-instagram"
           />
         </a>
       </div>

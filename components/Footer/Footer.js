@@ -1,22 +1,9 @@
 import { Fragment, PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import './Footer.css';
 
 export default class Footer extends PureComponent {
-  static propTypes = {
-    /** Links Array */
-    links: PropTypes.arrayOf(
-      PropTypes.shape({
-        /** Link URL */
-        url: PropTypes.string,
-        /** Link Title */
-        title: PropTypes.string,
-      })
-    ).isRequired,
-  };
-
   render() {
     return (
       <Fragment>
