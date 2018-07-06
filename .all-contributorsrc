@@ -55,15 +55,6 @@
       ]
     },
     {
-      "login": "bogas04",
-      "name": "Divjot Singh",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/6177621?v=4",
-      "profile": "http://bogas04.github.io",
-      "contributions": [
-        "code"
-      ]
-    },
-    {
       "login": "Nshul",
       "name": "Anshul Mittal",
       "avatar_url": "https://avatars3.githubusercontent.com/u/26252118?v=4",
@@ -77,6 +68,15 @@
       "name": "Twisha",
       "avatar_url": "https://avatars2.githubusercontent.com/u/24837027?v=4",
       "profile": "https://twishasaraiya.github.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bogas04",
+      "name": "Divjot Singh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6177621?v=4",
+      "profile": "http://bogas04.github.io",
       "contributions": [
         "code"
       ]

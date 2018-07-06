@@ -6,13 +6,71 @@ exports[`<Item /> renders correctly 1`] = `
   name="Item one"
 >
   <JSXStyle
-    css="li.jsx-4170437294{border:1px solid grey;border-radius:5px;padding:10px;margin:10px;max-width:500px;}"
-    styleId="4170437294"
+    css="s.jsx-3347001721{color:#696b79;font-weight:bold;}.product_card.jsx-3347001721{font-size:14px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;list-style-type:none;margin:10px 1%;width:23%;}.product_card.jsx-3347001721:hover .product_buttons.jsx-3347001721{display:block;}.product_body.jsx-3347001721{padding:8px;text-align:center;}.product_body.jsx-3347001721 a.jsx-3347001721{font-weight:bold;-webkit-text-decoration:none;text-decoration:none;}.product_name.jsx-3347001721{height:30px;}.product_price.jsx-3347001721{height:30px;font-weight:bold;}.product_buttons.jsx-3347001721{position:relative;margin-top:-30px;bottom:50px;display:none;}.product_buttons.jsx-3347001721 div.jsx-3347001721{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #b6b6b6;width:50%;float:left;padding:8px;padding-top:10px;height:30px;background:white;}@media (max-width:768px){.product_card.jsx-3347001721{margin:10px 1.5%;width:30%;}}@media (max-width:425px){.product_card.jsx-3347001721{margin:10px 2%;width:46%;}}"
+    styleId="3347001721"
   />
   <li
-    className="jsx-4170437294"
+    className="jsx-3347001721 product_card"
   >
-    Item one
+    <a
+      className="jsx-3347001721"
+      href="#"
+    >
+      <img
+        alt="Item one"
+        className="jsx-3347001721"
+        width="100%"
+      />
+    </a>
+    <div
+      className="jsx-3347001721 product_body"
+    >
+      <div
+        className="jsx-3347001721 product_name"
+      >
+        <a
+          className="jsx-3347001721"
+          href="#"
+        >
+          Item one
+        </a>
+      </div>
+      <div
+        className="jsx-3347001721 product_price"
+      >
+        <span
+          className="jsx-3347001721"
+        >
+          <Rupee
+            height=".8em"
+          >
+            <svg
+              height=".8em"
+              viewBox="0 0 320 512"
+              width="1em"
+            >
+              <path
+                d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z"
+              />
+            </svg>
+          </Rupee>
+        </span>
+      </div>
+    </div>
+    <div
+      className="jsx-3347001721 product_buttons"
+    >
+      <div
+        className="jsx-3347001721 add_button"
+      >
+        Add
+      </div>
+      <div
+        className="jsx-3347001721 save_for_later"
+      >
+        SaveForLater
+      </div>
+    </div>
   </li>
 </Item>
 `;
