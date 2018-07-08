@@ -18,9 +18,12 @@ export default class NavBar extends React.PureComponent {
    * @memberof NavBar
    */
   static propTypes = {
+    /** Links Array */
     links: PropTypes.arrayOf(
       PropTypes.shape({
+        /** Link URL */
         url: PropTypes.string,
+        /** Link Title */
         title: PropTypes.string,
       })
     ).isRequired,

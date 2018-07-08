@@ -1,5 +1,16 @@
 import React from 'react';
 import Item from '../components/Item';
+import Arrow from '../components/Icons/Arrow';
+import Bookmark from '../components/Icons/Bookmark';
+import Cog from '../components/Icons/Cog';
+import Hamburger from '../components/Icons/Hamburger';
+import Heart from '../components/Icons/Heart';
+import Rupee from '../components/Icons/Rupee';
+import Save from '../components/Icons/Save';
+import Search from '../components/Icons/Search';
+import Share from '../components/Icons/Share';
+import User from '../components/Icons/User';
+import Chevron from '../components/Icons/Chevron';
 
 /**
  * Home page
@@ -16,6 +27,11 @@ export default class IndexPage extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
+        <style jsx>{`
+          ul {
+            padding: 0;
+          }
+        `}</style>
         <main>
           <img width="100%" src="/images/logo.png" alt="Logo of Upay NGO" />
 
@@ -35,10 +51,33 @@ export default class IndexPage extends React.PureComponent {
 
           <h2>Items</h2>
           <ul>
-            {this.state.items.map(({ id, name }) => (
-              <Item key={id} name={name} />
-            ))}
+            {this.state.items.map(
+              ({ id, name, imageUrl, originalPrice, discountedPrice }) => (
+                <Item
+                  key={id}
+                  name={name}
+                  imageUrl={imageUrl}
+                  originalPrice={originalPrice}
+                  discountedPrice={discountedPrice}
+                />
+              )
+            )}
           </ul>
+
+          <section>
+            <h1>Icons</h1>
+            <Arrow />
+            <Bookmark />
+            <Cog />
+            <Hamburger />
+            <Heart />
+            <Rupee />
+            <Save />
+            <Search />
+            <Share />
+            <User />
+            <Chevron direction={Chevron.DIRECTIONS.TOP} />
+          </section>
         </main>
       </React.Fragment>
     );
