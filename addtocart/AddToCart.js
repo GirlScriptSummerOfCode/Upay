@@ -1,15 +1,13 @@
 import React from 'react';
-export default class Addtocart extends React.PureComponent {
+export default class AddToCart extends React.PureComponent {
  
   render() {
     return (
       <React.Fragment>
         <style jsx>{`
           button {
-            *
-            *
-            *
-            background-color: #e33812;            font-size: 16px;
+            background-color: #e33812;   
+            font-size: 16px;
             border-radius: 12px;
     
             color: white;
