@@ -1,15 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
+import React from 'react';
+export default class Addtocart extends React.PureComponent {
+ 
   render() {
     return (
-      <div className="App">
-        <button onClick>Add to Cart</button>
-      </div>
-    );
-  }
+      <React.Fragment>
+        <style jsx>{`
+          button {
+            *
+            *
+            *
+            background-color: #e33812;            font-size: 16px;
+            border-radius: 12px;
+    
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 12px;
+    
+                `}</style>
+        
+        <button onClick={this.props.onClick}>
+          {this.props.children}
+        </button>
+      </React.Fragment>
+ );
 }
-
-export default App;
+}
