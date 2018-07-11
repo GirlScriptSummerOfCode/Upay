@@ -51,14 +51,18 @@ export default class IndexPage extends React.PureComponent {
               <Item id={id} name={name} />
             ))}
           </ul>
+<<<<<<< HEAD
+        </main>
+        
+=======
           <h2>Buy Now Button</h2>
           <buybutton/>
       </main>
       
+>>>>>>> 1f4ffb7... buy now button
       </React.Fragment>
     );
   }
-
   /**
    * This is for demo purposes.
    * Once the component has mounted, we fetch items from our API and sets them to state.
