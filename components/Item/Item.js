@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Rupee from '../Icons/Rupee';
 
 const Item = props => (
@@ -78,9 +79,9 @@ const Item = props => (
       }
     `}</style>
     <li className="product_card">
-      <a href="#">
+      <Link as={`/product/${props.name}`} href={`/product?name=${props.name}&image=${props.imageUrl}&price=${props.originalPrice}&dprice=${props.discountedPrice}`}>
         <img width="100%" src={props.imageUrl} alt={props.name} />
-      </a>
+      </Link>
       <div className="product_body">
         <div className="product_name">
           <a href="#">{props.name}</a>
