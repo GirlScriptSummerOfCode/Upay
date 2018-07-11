@@ -12,16 +12,17 @@ exports[`<Item /> renders correctly 1`] = `
   <li
     className="jsx-3347001721 product_card"
   >
-    <a
-      className="jsx-3347001721"
-      href="#"
+    <Link
+      as="/product/123"
+      href="/product?id=123"
     >
       <img
         alt="Item one"
         className="jsx-3347001721"
+        onClick={[Function]}
         width="100%"
       />
-    </a>
+    </Link>
     <div
       className="jsx-3347001721 product_body"
     >

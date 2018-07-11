@@ -50,9 +50,9 @@ const api = Router();
 /* Our demo API */
 
 api
-  .get('/items', (req, res) => res.json({ data: items }))
-  .get('/api/items/:id', (req, res) =>
-    res.json({ data: items[req.params.id + 1] || null })
-  );
+  .get('/items/:id', (req, res) =>
+    res.json({ data: items[req.params.id - 1] || null })
+  )
+  .get('/items', (req, res) => res.json({ data: items }));
 
 module.exports = api;
