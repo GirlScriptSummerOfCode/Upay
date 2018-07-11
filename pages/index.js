@@ -79,10 +79,10 @@ export default class IndexPage extends React.PureComponent {
             <Chevron direction={Chevron.DIRECTIONS.TOP} />
           </section>
         </main>
+        
       </React.Fragment>
     );
   }
-
   /**
    * This is for demo purposes.
    * Once the component has mounted, we fetch items from our API and sets them to state.
