@@ -18,7 +18,7 @@ nextApp.prepare().then(() => {
   /* APIs go there */
   expressServer.use('/api', api);
 
-  /*Clean URL for rendering Product Information*/
+  /* Clean URL for rendering Product Information*/
   expressServer.get('/product/:id', (req, res) => {
     const actualPage = '/product';
     nextApp.render(req, res, actualPage, req.params);
