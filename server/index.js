@@ -21,8 +21,7 @@ nextApp.prepare().then(() => {
   /*Clean URL for rendering Product Information*/
   expressServer.get('/product/:id', (req, res) => {
     const actualPage = '/product';
-    const queryParams = { id: req.params.id };
-    nextApp.render(req, res, actualPage, queryParams);
+    nextApp.render(req, res, actualPage, req.params);
   });
 
   /* All website routes are automatically handled by next */

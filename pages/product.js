@@ -215,9 +215,9 @@ class ProductPage extends React.PureComponent {
 
 ProductPage.getInitialProps = async function(context) {
   const { id } = context.query;
-  const res = await fetch(`${server}/api/items/${id}`);
-  var Item = await res.json();
-  Item = Item.data;
+  const { data: Item } = await fetch(`${server}/api/items/${id}`).then(r =>
+    r.json()
+  );
   return { Item };
 };
 
