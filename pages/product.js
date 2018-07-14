@@ -4,6 +4,7 @@ import Bookmark from '../components/Icons/Bookmark';
 import { withRouter } from 'next/router';
 import fetch from 'isomorphic-unfetch';
 import { server } from '../server/config';
+import PropTypes from 'prop-types';
 
 class ProductPage extends React.PureComponent {
   state = {
@@ -33,6 +34,7 @@ class ProductPage extends React.PureComponent {
   };
   render() {
     const { router } = this.props;
+    const { Item } = this.props;
     return (
       <div className="wrapper">
         <style jsx>{`
@@ -143,12 +145,12 @@ class ProductPage extends React.PureComponent {
             <img
               className="thumbnail_big"
               ref="displayImage"
-              src={this.props.Item.imageUrl}
+              src={Item.imageUrl}
             />
             <div>
               <img
                 className="thumbnail_small"
-                src={this.props.Item.imageUrl}
+                src={Item.imageUrl}
                 onMouseOver={this.changeImage}
               />
               <img
@@ -158,12 +160,12 @@ class ProductPage extends React.PureComponent {
               />
               <img
                 className="thumbnail_small"
-                src={this.props.Item.imageUrl}
+                src={Item.imageUrl}
                 onMouseOver={this.changeImage}
               />
               <img
                 className="thumbnail_small"
-                src={this.props.Item.imageUrl}
+                src={Item.imageUrl}
                 onMouseOver={this.changeImage}
               />
             </div>
@@ -171,22 +173,22 @@ class ProductPage extends React.PureComponent {
 
           <div className="description_container">
             <div className="product_info_container">
-              <h1>{this.props.Item.name}</h1>
-              {this.props.Item.originalPrice ? (
+              <h1>{Item.name}</h1>
+              {Item.originalPrice ? (
                 <s>
                   <Rupee />
-                  {this.props.Item.originalPrice}
+                  {Item.originalPrice}
                 </s>
               ) : (
                 <span>
                   <Rupee />
-                  {this.props.Item.originalPrice}
+                  {Item.originalPrice}
                 </span>
               )}
-              {this.props.Item.discountedPrice && (
+              {Item.discountedPrice && (
                 <span>
                   <Rupee />
-                  <strong>{this.props.Item.discountedPrice}</strong>
+                  <strong>{Item.discountedPrice}</strong>
                 </span>
               )}
               <p>Product description here</p>
@@ -220,5 +222,15 @@ class ProductPage extends React.PureComponent {
     );
   }
 }
+
+ProductPage.propTypes = {
+  Item: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    imageUrl: PropTypes.string,
+    originalPrice: PropTypes.number,
+    discountedPrice: PropTypes.number,
+  }),
+};
 
 export default withRouter(ProductPage);
