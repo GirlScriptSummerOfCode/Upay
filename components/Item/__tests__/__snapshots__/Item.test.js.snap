@@ -13,8 +13,7 @@ exports[`<Item /> renders correctly 1`] = `
     className="jsx-3347001721 product_card"
   >
     <Link
-      as="/product/123"
-      href="/product?id=123"
+      href="/product/123"
     >
       <img
         alt="Item one"

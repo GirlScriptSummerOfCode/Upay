@@ -79,7 +79,7 @@ const Item = props => (
       }
     `}</style>
     <li className="product_card">
-      <Link as={`/product/${props.id}`} href={`/product?id=${props.id}`}>
+      <Link href={`/product/${props.id}`}>
         <img width="100%" src={props.imageUrl} alt={props.name} />
       </Link>
       <div className="product_body">

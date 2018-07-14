@@ -5,14 +5,28 @@ import { withRouter } from 'next/router';
 import fetch from 'isomorphic-unfetch';
 import { server } from '../server/config';
 import PropTypes from 'prop-types';
-
+import Error from 'next/error';
 class ProductPage extends React.PureComponent {
   state = {
     qty: 0,
   };
 
-  static getInitialProps = async function(context) {
-    const { id } = context.query;
+  static propTypes = {
+    Item: PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      imageUrl: PropTypes.string,
+      originalPrice: PropTypes.number,
+      discountedPrice: PropTypes.number,
+    }),
+  };
+
+  static getInitialProps = async ({ query, res }) => {
+    const { id } = query;
+    if (!id && res) {
+      res.statusCode = 404;
+      return { Item: null };
+    }
     const { data: Item } = await fetch(`${server}/api/items/${id}`).then(r =>
       r.json()
     );
@@ -35,6 +49,7 @@ class ProductPage extends React.PureComponent {
   render() {
     const { router } = this.props;
     const { Item } = this.props;
+    if (!Item) return <Error status={404} />;
     return (
       <div className="wrapper">
         <style jsx>{`
@@ -222,15 +237,5 @@ class ProductPage extends React.PureComponent {
     );
   }
 }
-
-ProductPage.propTypes = {
-  Item: PropTypes.shape({
-    id: PropTypes.number,
-    name: PropTypes.string,
-    imageUrl: PropTypes.string,
-    originalPrice: PropTypes.number,
-    discountedPrice: PropTypes.number,
-  }),
-};
 
 export default withRouter(ProductPage);
