@@ -87,9 +87,9 @@ const Item = props => (
           <a href="#">{props.name}</a>
         </div>
         <div className="product_price">
-          {/*This code handles price.*/}
-          {/*If discounted price is available, it displays discounted price and strikes-through original price.*/}
-          {/*If discounted price is not available, it displays original price.*/}
+          {/* This code handles price. */}
+          {/* If discounted price is available, it displays discounted price and strikes-through original price. */}
+          {/* If discounted price is not available, it displays original price. */}
           {props.discountedPrice && (
             <span>
               <Rupee height=".8em" />
@@ -110,7 +110,7 @@ const Item = props => (
         </div>
       </div>
       <div className="product_buttons">
-        {/*Add the buttons later*/}
+        {/* Add the buttons later */}
         <div className="add_button">Add</div>
         <div className="save_for_later">SaveForLater</div>
       </div>
