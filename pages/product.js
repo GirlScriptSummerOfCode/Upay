@@ -10,6 +10,14 @@ class ProductPage extends React.PureComponent {
     qty: 0,
   };
 
+  static getInitialProps = async function(context) {
+    const { id } = context.query;
+    const { data: Item } = await fetch(`${server}/api/items/${id}`).then(r =>
+      r.json()
+    );
+    return { Item };
+  };
+
   changeImage = e => {
     this.refs.displayImage.src = e.target.src;
   };
@@ -212,13 +220,5 @@ class ProductPage extends React.PureComponent {
     );
   }
 }
-
-ProductPage.getInitialProps = async function(context) {
-  const { id } = context.query;
-  const { data: Item } = await fetch(`${server}/api/items/${id}`).then(r =>
-    r.json()
-  );
-  return { Item };
-};
 
 export default withRouter(ProductPage);
