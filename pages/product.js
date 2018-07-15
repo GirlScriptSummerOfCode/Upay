@@ -1,18 +1,25 @@
 import React from 'react';
-import Rupee from '../components/Icons/Rupee';
 import Bookmark from '../components/Icons/Bookmark';
+import QuantityButton from '../components/QuantityButton';
+import Breadcrumb from '../components/Breadcrumb';
+import Carousel from '../components/Carousel';
+import ProductInfo from '../components/ProductInfo';
 import { withRouter } from 'next/router';
 import fetch from 'isomorphic-unfetch';
 import { server } from '../server/config';
 
+/**
+ * Product Details Page
+ *
+ * @export
+ * @class ProductPage
+ * @extends {React.PureComponent}
+ */
 class ProductPage extends React.PureComponent {
   state = {
     qty: 0,
   };
 
-  changeImage = e => {
-    this.refs.displayImage.src = e.target.src;
-  };
   increment = () => {
     this.setState({
       qty: this.state.qty + 1,
@@ -24,13 +31,10 @@ class ProductPage extends React.PureComponent {
     });
   };
   render() {
-    const { router } = this.props;
+    const { router, Item } = this.props;
     return (
       <div className="wrapper">
         <style jsx>{`
-          .breadcrumb {
-            margin: 20px;
-          }
           .wrapper {
             width: 80%;
             margin: auto;
@@ -40,7 +44,6 @@ class ProductPage extends React.PureComponent {
             flex-direction: row;
             flex-wrap: wrap;
           }
-          .image_container,
           .description_container {
             width: 50%;
           }
@@ -60,39 +63,10 @@ class ProductPage extends React.PureComponent {
           .save_button {
             background: #535766;
           }
-          .thumbnail_big {
-            width: 90%;
-            height: 480px;
-            margin: 20px;
-          }
-          .thumbnail_small {
-            margin: 10px;
-            width: 20%;
-            height: 66px;
-          }
-          .action_container,
-          .quantity_container {
+          .action_container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-          }
-          .increment_button,
-          .decrement_button {
-            width: 44px;
-            height: 40px;
-            margin: 0px;
-            border: 1px solid #535766;
-            text-align: center;
-            font-size: 16pt;
-            font-weight: 500;
-            color: #535766;
-          }
-          .quantity {
-            width: 80px;
-            height: 20px;
-            border: 1px solid #535766;
-            text-align: center;
-            padding: 9px;
           }
           @media (max-width: 768px) {
             .wrapper {
@@ -107,7 +81,6 @@ class ProductPage extends React.PureComponent {
             .wrapper {
               margin-bottom: 32px;
             }
-            .image_container,
             .description_container {
               width: 100%;
             }
@@ -126,76 +99,18 @@ class ProductPage extends React.PureComponent {
             }
           }
         `}</style>
-        <div className="breadcrumb">
-          <a href="/">Home</a>
-          {router.asPath.replace(/%20/g, ' ')}
-        </div>
+        <Breadcrumb path={router.asPath} />
         <div className="product_container">
-          <div className="image_container">
-            <img
-              className="thumbnail_big"
-              ref="displayImage"
-              src={this.props.Item.imageUrl}
-            />
-            <div>
-              <img
-                className="thumbnail_small"
-                src={this.props.Item.imageUrl}
-                onMouseOver={this.changeImage}
-              />
-              <img
-                className="thumbnail_small"
-                src="/images/upay.png"
-                onMouseOver={this.changeImage}
-              />
-              <img
-                className="thumbnail_small"
-                src={this.props.Item.imageUrl}
-                onMouseOver={this.changeImage}
-              />
-              <img
-                className="thumbnail_small"
-                src={this.props.Item.imageUrl}
-                onMouseOver={this.changeImage}
-              />
-            </div>
-          </div>
-
+          <Carousel imageUrl={Item.imageUrl} />
           <div className="description_container">
-            <div className="product_info_container">
-              <h1>{this.props.Item.name}</h1>
-              {this.props.Item.originalPrice ? (
-                <s>
-                  <Rupee />
-                  {this.props.Item.originalPrice}
-                </s>
-              ) : (
-                <span>
-                  <Rupee />
-                  {this.props.Item.originalPrice}
-                </span>
-              )}
-              {this.props.Item.discountedPrice && (
-                <span>
-                  <Rupee />
-                  <strong>{this.props.Item.discountedPrice}</strong>
-                </span>
-              )}
-              <p>Product description here</p>
-            </div>
-            <div className="quantity_container">
-              <button className="increment_button" onClick={this.increment}>
-                +
-              </button>
-              <div className="quantity">{this.state.qty}</div>
-              <button
-                disabled={!this.state.qty}
-                className="decrement_button"
-                onClick={this.decrement}
-              >
-                -
-              </button>
-            </div>
+            <ProductInfo name={Item.name}
+              originalPrice={Item.originalPrice}
+              discountedPrice={Item.discountedPrice} />
+            <QuantityButton
+              qty={this.state.qty}
+              increment={this.increment}
+              decrement={this.decrement}
+            />
             <div className="delivery_container">
               <h4>Delivery Options</h4>
             </div>
