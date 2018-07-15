@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Error from 'next/error';
 import Bookmark from '../components/Icons/Bookmark';
 import QuantityButton from '../components/QuantityButton';
 import Breadcrumb from '../components/Breadcrumb';
@@ -20,6 +22,27 @@ class ProductPage extends React.PureComponent {
     qty: 0,
   };
 
+  static propTypes = {
+    Item: PropTypes.shape({
+      id: PropTypes.number,
+      name: PropTypes.string,
+      imageUrl: PropTypes.string,
+      originalPrice: PropTypes.number,
+      discountedPrice: PropTypes.number,
+    }),
+  };
+
+  static getInitialProps = async ({ query, res }) => {
+    const { id } = query;
+    if (!id && res) {
+      res.statusCode = 404;
+      return { Item: null };
+    }
+    const { data: Item } = await fetch(`${server}/api/items/${id}`).then(r =>
+      r.json()
+    );
+    return { Item };
+  };
   increment = () => {
     this.setState({
       qty: this.state.qty + 1,
@@ -32,6 +55,7 @@ class ProductPage extends React.PureComponent {
   };
   render() {
     const { router, Item } = this.props;
+    if (!Item) return <Error status={404} />;
     return (
       <div className="wrapper">
         <style jsx>{`
@@ -103,9 +127,11 @@ class ProductPage extends React.PureComponent {
         <div className="product_container">
           <Carousel imageUrl={Item.imageUrl} />
           <div className="description_container">
-            <ProductInfo name={Item.name}
+            <ProductInfo
+              name={Item.name}
               originalPrice={Item.originalPrice}
-              discountedPrice={Item.discountedPrice} />
+              discountedPrice={Item.discountedPrice}
+            />
             <QuantityButton
               qty={this.state.qty}
               increment={this.increment}
@@ -127,13 +153,5 @@ class ProductPage extends React.PureComponent {
     );
   }
 }
-
-ProductPage.getInitialProps = async function(context) {
-  const { id } = context.query;
-  const { data: Item } = await fetch(`${server}/api/items/${id}`).then(r =>
-    r.json()
-  );
-  return { Item };
-};
 
 export default withRouter(ProductPage);

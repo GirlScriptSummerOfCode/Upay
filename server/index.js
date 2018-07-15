@@ -20,8 +20,7 @@ nextApp.prepare().then(() => {
 
   /* Clean URL for rendering Product Information*/
   expressServer.get('/product/:id', (req, res) => {
-    const actualPage = '/product';
-    nextApp.render(req, res, actualPage, req.params);
+    nextApp.render(req, res, '/product', req.params);
   });
 
   /* All website routes are automatically handled by next */
