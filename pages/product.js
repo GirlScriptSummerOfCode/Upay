@@ -26,7 +26,7 @@ class ProductPage extends React.PureComponent {
     Item: PropTypes.shape({
       id: PropTypes.number,
       name: PropTypes.string,
-      imageUrl: PropTypes.string,
+      imageUrls: PropTypes.array,
       originalPrice: PropTypes.number,
       discountedPrice: PropTypes.number,
     }),
@@ -92,7 +92,7 @@ class ProductPage extends React.PureComponent {
             flex-direction: row;
             flex-wrap: wrap;
           }
-          @media (max-width: 768px) {
+          @media (max-width: 850px) {
             .wrapper {
               width: 100%;
             }
@@ -101,7 +101,7 @@ class ProductPage extends React.PureComponent {
               width: 80%;
             }
           }
-          @media (max-width: 425px) {
+          @media (max-width: 650px) {
             .wrapper {
               margin-bottom: 32px;
             }
@@ -125,7 +125,7 @@ class ProductPage extends React.PureComponent {
         `}</style>
         <Breadcrumb path={router.asPath} />
         <div className="product_container">
-          <Carousel imageUrl={Item.imageUrl} />
+          <Carousel imageUrls={Item.imageUrls} />
           <div className="description_container">
             <ProductInfo
               name={Item.name}

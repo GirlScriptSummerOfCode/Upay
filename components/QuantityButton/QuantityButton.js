@@ -36,6 +36,9 @@ export default class QuantityButton extends React.Component {
             text-align: center;
             padding: 9px;
           }
+          .disabled {
+            cursor: not-allowed;
+          }
         `}</style>
         <div className="quantity_container">
           <button className="increment_button" onClick={increment}>
@@ -44,7 +47,7 @@ export default class QuantityButton extends React.Component {
           <div className="quantity">{this.props.qty}</div>
           <button
             disabled={!qty}
-            className="decrement_button"
+            className={'decrement_button ' + (qty ? '' : 'disabled')}
             onClick={decrement}
           >
             -

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class Carousel extends React.PureComponent {
   static propTypes = {
-    imageUrl: PropTypes.string,
+    imageUrls: PropTypes.array,
   };
 
   changeImage = e => {
@@ -11,7 +11,7 @@ export default class Carousel extends React.PureComponent {
   };
 
   render() {
-    const { imageUrl } = this.props;
+    const { imageUrls } = this.props;
     return (
       <React.Fragment>
         <style jsx>{`
@@ -28,33 +28,37 @@ export default class Carousel extends React.PureComponent {
             width: 20%;
             height: 66px;
           }
-          @media (max-width: 425px) {
-            .image_container{
+          @media (max-width: 650px) {
+            .image_container {
               width: 100%;
             }
           }
         `}</style>
         <div className="image_container">
-          <img className="thumbnail_big" ref="displayImage" src={imageUrl} />
+          <img
+            className="thumbnail_big"
+            ref="displayImage"
+            src={imageUrls[0]}
+          />
           <div>
             <img
               className="thumbnail_small"
-              src={imageUrl}
+              src={imageUrls[1]}
               onMouseOver={this.changeImage}
             />
             <img
               className="thumbnail_small"
-              src="/images/upay.png"
+              src={imageUrls[2]}
               onMouseOver={this.changeImage}
             />
             <img
               className="thumbnail_small"
-              src={imageUrl}
+              src={imageUrls[3]}
               onMouseOver={this.changeImage}
             />
             <img
               className="thumbnail_small"
-              src={imageUrl}
+              src={imageUrls[4]}
               onMouseOver={this.changeImage}
             />
           </div>
