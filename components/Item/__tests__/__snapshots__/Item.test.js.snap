@@ -2,7 +2,7 @@
 
 exports[`<Item /> renders correctly 1`] = `
 <Item
-  id={123}
+  id={1234}
   imageUrls={
     Array [
       "",
@@ -18,7 +18,7 @@ exports[`<Item /> renders correctly 1`] = `
     className="jsx-3347001721 product_card"
   >
     <Link
-      href="/product/123"
+      href="/product/1234"
     >
       <img
         alt="Item one"
