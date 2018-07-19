@@ -18,6 +18,11 @@ nextApp.prepare().then(() => {
   /* APIs go there */
   expressServer.use('/api', api);
 
+  /* Clean URL for rendering Product Information*/
+  expressServer.get('/product/:id', (req, res) => {
+    nextApp.render(req, res, '/product', req.params);
+  });
+
   /* All website routes are automatically handled by next */
   expressServer.get('*', handleNextPages);
 

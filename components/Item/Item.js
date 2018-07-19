@@ -1,5 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import Rupee from '../Icons/Rupee';
+import PropTypes from 'prop-types';
 
 const Item = props => (
   <React.Fragment>
@@ -78,17 +80,17 @@ const Item = props => (
       }
     `}</style>
     <li className="product_card">
-      <a href="#">
-        <img width="100%" src={props.imageUrl} alt={props.name} />
-      </a>
+      <Link href={`/product/${props.id}`}>
+        <img width="100%" src={props.imageUrls[0]} alt={props.name} />
+      </Link>
       <div className="product_body">
         <div className="product_name">
           <a href="#">{props.name}</a>
         </div>
         <div className="product_price">
-          {/*This code handles price.*/}
-          {/*If discounted price is available, it displays discounted price and strikes-through original price.*/}
-          {/*If discounted price is not available, it displays original price.*/}
+          {/* This code handles price. */}
+          {/* If discounted price is available, it displays discounted price and strikes-through original price. */}
+          {/* If discounted price is not available, it displays original price. */}
           {props.discountedPrice && (
             <span>
               <Rupee height=".8em" />
@@ -109,7 +111,7 @@ const Item = props => (
         </div>
       </div>
       <div className="product_buttons">
-        {/*Add the buttons later*/}
+        {/* Add the buttons later */}
         <div className="add_button">Add</div>
         <div className="save_for_later">SaveForLater</div>
       </div>
@@ -117,4 +119,11 @@ const Item = props => (
   </React.Fragment>
 );
 
+Item.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  originalPrice: PropTypes.number,
+  discountedPrice: PropTypes.number,
+  imageUrls: PropTypes.arrayOf(PropTypes.string),
+};
 export default Item;

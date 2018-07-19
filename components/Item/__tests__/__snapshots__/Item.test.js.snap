@@ -2,7 +2,12 @@
 
 exports[`<Item /> renders correctly 1`] = `
 <Item
-  id="123"
+  id={1234}
+  imageUrls={
+    Array [
+      "",
+    ]
+  }
   name="Item one"
 >
   <JSXStyle
@@ -12,16 +17,17 @@ exports[`<Item /> renders correctly 1`] = `
   <li
     className="jsx-3347001721 product_card"
   >
-    <a
-      className="jsx-3347001721"
-      href="#"
+    <Link
+      href="/product/1234"
     >
       <img
         alt="Item one"
         className="jsx-3347001721"
+        onClick={[Function]}
+        src=""
         width="100%"
       />
-    </a>
+    </Link>
     <div
       className="jsx-3347001721 product_body"
     >

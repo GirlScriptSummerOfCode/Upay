@@ -22,5 +22,6 @@ module.exports = {
     semi: ['error', 'always'],
     'react/jsx-uses-vars': 1,
     'react/jsx-uses-react': 1,
+    'spaced-comment': ['error', 'always', { exceptions: ['-', '+'] }],
   },
 };

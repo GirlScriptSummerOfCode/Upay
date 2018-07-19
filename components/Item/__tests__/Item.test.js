@@ -5,7 +5,7 @@ import Item from '../Item';
 
 describe('<Item />', () => {
   it('renders correctly', () => {
-    const wrapper = mount(<Item name="Item one" id="123" />);
+    const wrapper = mount(<Item name="Item one" id={1234} imageUrls={['']} />);
     expect(wrapper).toMatchSnapshot();
   });
 });
