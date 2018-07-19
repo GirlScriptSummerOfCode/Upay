@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class Carousel extends React.PureComponent {
+  constructor(props){
+    super(props);
+    this.displayImage = React.createRef();
+  }
   static propTypes = {
     imageUrls: PropTypes.array,
   };
 
   changeImage = e => {
-    this.refs.displayImage.src = e.target.src;
+    this.displayImage.current.src = e.target.src;
   };
 
   render() {
@@ -37,30 +41,14 @@ export default class Carousel extends React.PureComponent {
         <div className="image_container">
           <img
             className="thumbnail_big"
-            ref="displayImage"
+            ref={this.displayImage}
             src={imageUrls[0]}
           />
           <div>
-            <img
-              className="thumbnail_small"
-              src={imageUrls[1]}
-              onMouseOver={this.changeImage}
-            />
-            <img
-              className="thumbnail_small"
-              src={imageUrls[2]}
-              onMouseOver={this.changeImage}
-            />
-            <img
-              className="thumbnail_small"
-              src={imageUrls[3]}
-              onMouseOver={this.changeImage}
-            />
-            <img
-              className="thumbnail_small"
-              src={imageUrls[4]}
-              onMouseOver={this.changeImage}
-            />
+            {imageUrls.map((src,i) => (
+              <img key={i} className="thumbnail_small" src={src} onMouseOver={this.changeImage} />
+            )
+            )}
           </div>
         </div>
       </React.Fragment>

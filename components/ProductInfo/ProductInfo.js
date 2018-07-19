@@ -7,9 +7,13 @@ export default class ProductInfo extends React.PureComponent {
     name: PropTypes.string,
     originalPrice: PropTypes.number,
     discountedPrice: PropTypes.number,
+    description: PropTypes.string,
+  };
+  static defaultProps = {
+    description: 'No description available',
   };
   render() {
-    const { name, originalPrice, discountedPrice } = this.props;
+    const { name, originalPrice, discountedPrice, description } = this.props;
     return (
       <React.Fragment>
         <div className="product_info_container">
@@ -31,7 +35,7 @@ export default class ProductInfo extends React.PureComponent {
               <strong>{discountedPrice}</strong>
             </span>
           )}
-          <p>Product description here</p>
+          <p>{description}</p>
         </div>
       </React.Fragment>
     );

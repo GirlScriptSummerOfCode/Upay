@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Rupee from '../Icons/Rupee';
+import PropTypes from 'prop-types';
 
 const Item = props => (
   <React.Fragment>
@@ -118,4 +119,11 @@ const Item = props => (
   </React.Fragment>
 );
 
+Item.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  originalPrice: PropTypes.number,
+  discountedPrice: PropTypes.number,
+  imageUrls: PropTypes.arrayOf(PropTypes.string),
+};
 export default Item;
